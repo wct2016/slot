@@ -1,0 +1,80 @@
+@charset 'UTF-8';
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background:#fff9dc url(img/bg.jpg) no-repeat 0 0;
+	background-size:cover;
+}
+
+.outside {
+	width: 850px;
+	margin: 0px auto 0;
+	padding-top: 60px;
+}
+
+/* スロットエリア */
+#slot {
+	text-align: center;
+	margin-bottom: 40px;
+	width: 100%;
+	height: 616px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#slot.tshirt {
+	background-image: url(img/tshirt.png);
+}
+#slot.stecker {
+	background-image: url(img/stecker.png);
+}
+#slot.sense {
+	background-image: url(img/sense.png);
+}
+#slot.cup {
+	background-image: url(img/cup.png);
+}
+
+
+
+/* スタート・ストップボタン */
+#button {
+	width: 701px;
+	height: 184px;
+	margin: 0 auto;
+}
+#button a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-indent: -9999px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+#button a:hover {
+	background-position: 0 bottom;
+}
+.start a {
+	background-image: url(img/btn_start.png);
+}
+.stop a {
+	background-image: url(img/btn_stop.png);
+}
+
+/* 結果表示 */
+#result {
+	background: #fff;
+	border: 10px solid #111;
+	text-align: center;
+	padding: 25px 70px;
+	font-weight: bold;
+	font-size: 60px;
+	border-radius: 80px;        /* CSS3草案 */
+	-webkit-border-radius: 80px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 80px;   /* Firefox用 */
+	display: none;
+}
